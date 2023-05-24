@@ -1,0 +1,21 @@
+<!--/*@thymesVar id="newsPage" type="org.springframework.data.domain.Page<my.project.feed.news.entity.News>"*/-->
+<th:block th:each="newsItem : ${newsPage.getContent()}">
+    <!-- Iterate over each news item in the 'newsPage' content. -->
+    <!-- Card element to display each news item. -->
+    <div class="card card-news mb-3">
+        <!-- Display the title of the news item. -->
+        <h5 class="card-title" th:text="${newsItem.title}">Заголовок новости</h5>
+        <!-- Check if the news item has an image. -->
+        <th:block th:if="${newsItem.imageView}">
+            <!-- Display the image associated with the news item. -->
+            <img th:src="'/img/'+${newsItem.image}" class="card-img-top" alt="news image">
+        </th:block>
+        <!-- Display the body/content of the news item. -->
+        <p class="card-text" th:text="${newsItem.body}">Тело новости...</p>
+        <p class="card-text">
+            <!-- Display the publication date and time of the news item. -->
+            <small class="text-muted" th:text="${newsItem.publicationDateTime}">Дата публикации</small>
+        </p>
+    </div>
+</th:block>
+

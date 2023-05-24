@@ -1,0 +1,82 @@
+/* Стили для синей полоски и надписи */
+.news-header {
+    background-color: #007bff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.news-header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Стили для формы выбора количества новостей */
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-inline label {
+    margin-right: 10px;
+}
+
+.form-inline select {
+    width: 80px;
+}
+
+/* Опциональные стили для улучшения внешнего вида выпадающего списка */
+.form-inline select::-ms-expand {
+    display: none;
+}
+
+.form-inline select:focus {
+    outline: none;
+}
+
+.form-inline select option {
+    padding: 5px;
+}
+
+/*карточки */
+.card-news {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.card-news img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-news .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-news .card-text {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-news .text-muted {
+    font-size: 12px;
+}
+
+.error-code {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error-message {
+    font-size: 18px;
+}
